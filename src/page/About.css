@@ -1,0 +1,98 @@
+.aboutdiv{
+
+height: auto;
+width: 70%;
+justify-content: center;
+margin-left: 10%;
+padding-top: 110px;
+
+}
+h1{
+    
+    text-align: center;
+}
+p{
+    text-align: justify;
+    text-justify: inter-word;
+}
+.btn_Home{
+    background-color: white;
+    height: 50px;
+    width: 200px;
+    color: black;
+    margin-left: 49%;
+    border: none;
+}
+
+
+/* Mobile (Small Screens: < 600px) */
+@media (max-width: 599px) {
+    header {
+        padding: 10px;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item {
+        margin: 10px 0;
+        width: 100%;
+    }
+}
+
+/* Tablets (Medium Screens: 600px to 899px) */
+@media (min-width: 400px) and (max-width: 899px) {
+    header {
+        padding: 15px;
+    }
+
+    .content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .item {
+        margin: 10px;
+        width: 45%;
+    }
+    p{
+        align-items: center;
+    }
+}
+
+/* Desktops (Large Screens: > 900px) */
+@media (min-width: 900px) {
+    .content {
+        justify-content: space-between;
+    }
+
+    .item {
+        width: 30%;
+        /* Items take up 30% of the available width on desktop */
+    }
+}
+
+@media (max-width: 400px) {
+    header {
+        padding: 15px;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item {
+        margin: 10px 0;
+        width: 100%;
+        
+    }
+   p{
+    text-align: center;
+    
+    text-justify: inter-word;
+
+   }
+    }

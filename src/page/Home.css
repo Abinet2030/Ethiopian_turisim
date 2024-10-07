@@ -1,0 +1,264 @@
+body{
+    background-color: bisque; 
+    display: block;
+    
+         
+}
+h3{
+    font-family:'Times New Roman', Times, serif;
+}
+p{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+
+
+/* {stayling hiro image} */
+/* Animation for the image */
+.image-container {
+  
+    position: absolute;
+    width: 90%;
+    height: 400px;
+    margin-top: 200px;
+    margin-left: 100px;
+    overflow: hidden;
+    background-color: bisque;
+    animation: moveImageFromRightToCenter 2s ease-out forwards;
+}
+
+@keyframes moveImageFromRightToCenter {
+    0% {
+        transform: translateX(100%);
+        /* Start from the right */
+    }
+
+    100% {
+        transform: translateX(0);
+        /* End at the center */
+    }
+}
+
+/* Style for the image */
+.image {
+    
+    width: 500px;
+    height: auto;
+    justify-content: center;
+    
+}
+
+/* Animation for the text */
+.text-container {
+    
+    float: left;
+    width: 100%;
+    
+}
+
+@keyframes moveTextFromBottomToTop {
+    0% {
+        transform: translateY(100%);
+       
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+       
+        opacity: 1;
+    }
+}
+
+/* Title and paragraph styling */
+.title {
+    font-size: 2.5rem;
+    color: #060606;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 0px;
+    
+
+}
+
+.description {
+    font-size: 1.25rem;
+    font-family:'Courier New', Courier, monospace;
+    color: #fcf9f9;
+    
+}
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Vertically center items inside */
+    align-items: flex-start;
+    /* Align text to the left */
+    padding: 20px;
+    max-width: 600px;
+    /* Limit width of text */
+    text-align: left;
+    /* Align text to the left */
+}
+.title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+.tour-place {
+    position: absolute;
+    margin-top: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:5px;
+    width: 100%;
+    overflow: hidden;
+    background-color: bisque;
+ height: auto;
+    
+}
+
+/* Styling each individual place */
+.place {
+    padding: 10px;
+    margin-right: 10px;
+    margin-left: 90px;
+    margin-bottom: 30px;
+   
+    width: 450px;
+    height: 450px;
+    background-color: #f0f0f0;
+    text-align: center;
+    border-radius: 20px;
+   
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+}
+.imagee{
+    border-radius: 10%;
+    width: 80%;
+}
+.btn_lern{ 
+    border: none;
+    height: 50px;
+    width: 100px;
+   background-color: beige;
+   color: black;
+   
+    
+}
+
+
+/* Mobile (Max-width: 430px) */
+@media (max-width: 430px) {
+    .image-container {
+        flex-direction: column;
+        /* Stack image and text vertically */
+        align-items: center;
+    }
+
+    .text-container {
+        margin-top: 20px;
+    }
+
+    .image {
+        width: 90%;
+        /* Make image responsive */
+        max-width: 350px;
+    }
+
+    .title {
+        font-size: 1.4rem;
+        /* Reduce font size for mobile */
+    }
+
+    .description {
+        font-size: 0.8rem;
+    }
+
+    .btn_lern {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+
+    .tour-place {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .place {
+        max-width: 90%;
+        /* Make place cards take full width of screen */
+        padding: 5px;
+    }
+
+    .imagee {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    h3 {
+        font-size: 1rem;
+        /* Smaller titles on mobile */
+    }
+
+    p {
+        font-size: 0.75rem;
+        /* Smaller text for descriptions */
+    }
+}
+
+/* Tablet (Min-width: 431px to 899px) */
+@media (min-width: 431px) and (max-width: 899px) {
+    .image-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image {
+        width: 80%;
+        /* Make image smaller but still large enough */
+        max-width: 400px;
+    }
+
+    .title {
+        font-size: 1.6rem;
+        /* Slightly bigger than mobile */
+    }
+
+    .description {
+        font-size: 0.9rem;
+    }
+
+    .tour-place {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .place {
+        max-width: 45%;
+        /* 2 places per row on medium screens */
+    }
+
+    .imagee {
+        max-width: 280px;
+    }
+
+    h3 {
+        font-size: 1.1rem;
+    }
+
+    p {
+        font-size: 0.85rem;
+    }
+}
+
+

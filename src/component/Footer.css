@@ -1,0 +1,98 @@
+   .footer {
+       width: 100%;
+       height: auto;
+       padding: 6rem 0;
+       background-color: rgb(227, 205, 205);
+       bottom: 0;
+       left: 0;
+       z-index: 10;
+       /*it appears above other content */
+   }
+
+    .foter-contener {
+        display: flex;
+        max-width: 1140px;
+        grid-template-columns: repeat(2, 1rf);
+        grid-gap: 40px;
+        height: 100%;
+        margin-bottom: 0%;
+    }
+
+    .left {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .location {
+        display: flex;
+        margin-bottom: 0.8rem;
+        font-weight: bolder;
+    }
+
+    .phone {
+        display: flex;
+        font-weight: bold;
+        color: black;
+    }
+
+    .phone p {
+        line-height: 30px;
+        padding-top: 27px;
+        color: black;
+    }
+
+    .location p {
+        line-height: 30px;
+        padding-top: 27px;
+    }
+
+    .Email p {
+        line-height: 30px;
+        padding-top: 27px;
+    }
+
+    .Email {
+        display: flex;
+        font-weight: bolder;
+    }
+
+    .right {
+        height: 300px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .social {
+        margin-top: 1rem;
+    }
+
+    h4 {
+        font-size: 1.2rem;
+        padding-bottom: 0.7rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+        text-align: justify;
+     text-justify: inter-word;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    @media (max-width:640px) {
+        .foter-contener {
+            justify-content: center;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .foter-contener .left {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+    }
